@@ -1,0 +1,122 @@
+//MOBILE FIRST SCSS
+//
+// /**ALGEMENE CSS**/
+@font-face {
+  font-family: SegoeWpLight;
+  src: url(../webfonts/segoe-wp-light.ttf);
+}
+@font-face {
+  font-family: MyriadProRegular;
+  src: url(../webfonts/MYRIADPRO-REGULAR.woff);
+}
+/**VARIABELEN**/
+$fontColor: #909090;
+$fontColorNav: #6c6c6c;
+$colorBlue: #5094f2;
+$colorWhite: #fff;
+$fontArticleColor: #6f7173;
+$colorBlack: #000;
+
+body{
+  font-family: SegoeWpLight;
+  font-size:1rem;
+  color:$fontColor;
+}
+
+/**NAVIGATIE**/
+.navbar{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+.navbar-brand{
+  padding-left:6%;
+  p{
+    font-size:2.6rem;
+    color:$colorBlack;
+
+  }
+}
+//HAMBURGER BUTTON
+.navbar-toggler {
+  border-color: $colorBlue !important;
+}
+.navbar-toggler-icon {
+  background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(80, 148, 242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+//CAROUSEL
+.carousel-caption{
+  bottom: 20%;
+  left:50%;
+  right:0%;
+  text-align: left;
+  h2{
+    font-size: 2.62rem;
+  }
+  p{
+    font-size:1.62rem;
+  }
+  a{
+    background:$colorBlue;
+    color:$colorWhite;
+    font-size:1.39rem;
+  }
+}
+/**MAIN**/
+//ARTICLES
+#myArticles{
+  #pencil{
+    background:$colorBlue;
+  }
+  #pc{
+    background:#d94748;
+  }
+  #basket{
+    background:#ebbb11;
+  }
+}
+//ARTICLE
+#fullArticle{
+  h3{
+    font-size:2.62rem;
+    padding-bottom:30px;
+  }
+  h3,h4{
+  color:$fontArticleColor;
+}
+  h4{
+    font-weight:600;
+  }
+  p{
+    line-height:2.5rem;
+    font-size:0.917rem;
+    text-align:justify;
+  }
+}
+/*************************
+SCREENS LARGER THEN MOBILE
+**************************/
+/*sm*/
+@media (min-width: 576px) {  }
+
+/*md*/
+@media (min-width: 768px) {  }
+
+/*lg*/
+@media (min-width: 992px) {
+  #ptext{
+    padding-right:220px;
+  }
+  footer{
+    margin-top: 50px;
+    padding-top:50px;
+    padding-bottom:40px;
+  }
+
+}
+
+
+
+
+
